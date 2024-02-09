@@ -3,25 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My APP</title>
-<link rel="stylesheet" href="/CSS/mainindex.css">
+<title>My Training</title>
+<link rel="stylesheet" href="../CSS/mainindex.css">
 </head>
-<body>
 
-<div class="navbar">
+<body>
+<nav class="navbar">
   <div class="header">
-    <h1>My App</h1>
+    <h1>My Training</h1>
   </div>
   <ul class="categories">
-    <li><a href="/APACHE/index.html">APACHE</a></li>
-    <li><a href="/Boostrap/#">Boostrap</a></li>
-    <li><a href="/HTML/index.html">HTML</a></li>
-    <li><a href="/JavaScript/index.html">JavaScript</a></li>
-    <li><a href="/JQUERY/index.html">Jquery</a></li>
-    <li><a href="/PHP/index.html">PHP</a></li>
-    <li><a href="/index.html">HOME</a></li>
+    <li><a href="../APACHE/index.html">APACHE</a></li>
+    <li><a href="..//Boostrap/index.html">Boostrap</a></li>
+    <li><a href="../HTML/index.html">HTML</a></li>
+    <li><a href="../JavaScript/index.html">JavaScript</a></li>
+    <li><a href="../JQUERY/index.html">Jquery</a></li>
+    <li><a href="../PHP/index.html">PHP</a></li>
+    <li><a href="../index.html">HOME</a></li>
   </ul>
 </div>
-<h1 style="margin-top: 100px;">HTML</h1>
+</nav>
+<div class="content">
+  <div style="margin-top: 40px;">
+    <h2>Links</h2>
+    <div class="Links">
+      <div class="Hyperlink">
+        <h3>1. Hyperlink</h3>
+        <p>The HTML <b>&lt;a&gt;</b> tag defines a hyperlink. Clicking on a hyperlink allows you to go to the link's destination.</p>
+        <p><b>Absolute URL</b> Example: Clicking on <a href="/index.html">HOME</a> will lead you to the HOME page. <br> It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="/index.html"&gt;HOME&lt;/a&gt;</code><br>
+        </div>
+      </div>
+
+      <div class="RelativeURL">
+        <p><b>Relative URL</b> Example: Clicking on <a href="https://google.com/">Visit Google</a> will lead you to Google's homepage. <br>It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="https://google.com/"&gt;Visit Google&lt;/a&gt;</code>
+        </div>
+      </div>
+
+      <div class="TargetAttribute">
+        <p><b>Target Attribute</b> <br>
+        <span style="color: forestgreen;">_self</span> - Default. Opens the document in the same window/tab as it was clicked. <br>
+        <span style="color: forestgreen;">_blank</span> - Opens the document in a new window or tab. <br>
+        <span style="color: forestgreen;">_parent</span> - Opens the document in the parent frame. <br>
+        <span style="color: forestgreen;">_top</span> - Opens the document in the full body of the window. <br>
+        <span style="color:red">Note!</span> By default, the linked page will be displayed in the current browser window.<br>
+        It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="https://google.com/" target="_blank"&gt;Visit Google&lt;/a&gt;</code>
+        </div>
+      </div>
+
+      <div class="ImageAsLink">
+        <p><b>Image as a Link</b> Example: Clicking on 
+          <a href="https://google.com/">
+            <img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;">
+          </a> 
+          will lead you to Google's homepage. <br>It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="https://google.com/"&gt;<br>
+            &emsp;&emsp;&lt;img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;"&gt;<br>
+          &lt;/a&gt;</code>        
+        </div>
+      </div>
+
+      <div class="EmailLink">
+        <p><b>Link to an Email Address</b> Example: Clicking on <a href="mailto:someone@example.com">Send email to someone@example.com</a> 
+        create a link that opens the user's email program (to let them send a new email). <br>
+        It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="https://google.com/"&gt;Send email to someone@example.com&lt;/a&gt;</code>
+        </div>
+      </div>
+
+      <div class="LinkTitles">
+        <p><b>Link Titles</b> Example: Hovering on <a href="https://google.com/" title="Go to Google">Visit Google</a>
+        will show you the information of the "Visit Google" link. <br>
+        It can be used as follows:</p>
+        <div class="code">
+          <code>&lt;a href="https://google.com/" title="Go to Google"&gt;Visit Google&lt;/a&gt;</code>
+        </div>
+      </div>
+    </div><hr>
+
+    <div class="ExternalLink">
+      <h3>2. External Link</h3>
+      <p>The HTML <b>&lt;link&gt;</b> tag defines the relationship between a document and an external resource. <br>It can be used as follows: </p>
+      <div class="code">
+        <code>&lt;link rel="stylesheet" href="/CSS/mainindex.css"&gt;</code><br>
+      </div>
+    </div><hr>
+
+    <div class="NavigationLinks">
+      <h3>3. Navigation Links</h3>
+        The HTML <b>&lt;nav&gt;</b> tag is usyually used for the navigation bar. <br>
+        It ususlly directs you to go to another page of the web. <br>
+        Example is used in this page navigation bar. <br>It can be used as follows:
+      </p>
+      <div class="code">
+        <code>&lt;nav&gt;<br>
+          &emsp;&lt;a href="/html/"&gt;HTML&lt;/a&gt; <br>
+          &emsp;&lt;a href="/css/"&gt;CSS&lt;/a&gt; <br>
+          &emsp;&lt;a href="/js/"&gt;JavaScript&lt;/a&gt; <br>
+        &lt;/nav&gt;</code>
+      </div>
+    </div><hr>
+
+  </div>
+  
 </body>
+
 </html>
