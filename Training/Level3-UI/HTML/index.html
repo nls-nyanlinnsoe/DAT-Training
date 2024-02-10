@@ -13,80 +13,87 @@
     <h1>My Training</h1>
   </div>
   <ul class="categories">
-    <li><a href="../APACHE/index.html">APACHE</a></li>
+    <li><a href="../HTML/index.html" style="color: #23c2f3;">HTML</a></li>
+    <li><a href="../CSS/index.html">CSS</a></li>
     <li><a href="..//Boostrap/index.html">Boostrap</a></li>
-    <li><a href="../HTML/index.html">HTML</a></li>
     <li><a href="../JavaScript/index.html">JavaScript</a></li>
     <li><a href="../JQUERY/index.html">Jquery</a></li>
     <li><a href="../PHP/index.html">PHP</a></li>
+    <li><a href="../APACHE/index.html">APACHE</a></li>
     <li><a href="../index.html">HOME</a></li>
   </ul>
 </div>
 </nav>
-<div class="content">
-  <div style="margin-top: 40px;">
-    <h2>Links</h2>
-    <div class="Links">
+<div class="content" id="content">
+  <div class="Links">
+    <h2 id="Links">Links</h2>
       <div class="Hyperlink">
         <h3>1. Hyperlink</h3>
         <p>The HTML <b>&lt;a&gt;</b> tag defines a hyperlink. Clicking on a hyperlink allows you to go to the link's destination.</p>
-        <p><b>Absolute URL</b> Example: Clicking on <a href="/index.html">HOME</a> will lead you to the HOME page. <br> It can be used as follows:</p>
+        <p><b>Absolute URL</b> Clicking on <a href="/index.html">HOME</a> will lead you to the HOME page. <br> It can be used as follows:</p>
         <div class="code">
           <code>&lt;a href="/index.html"&gt;HOME&lt;/a&gt;</code><br>
         </div>
-      </div>
-
-      <div class="RelativeURL">
-        <p><b>Relative URL</b> Example: Clicking on <a href="https://google.com/">Visit Google</a> will lead you to Google's homepage. <br>It can be used as follows:</p>
-        <div class="code">
-          <code>&lt;a href="https://google.com/"&gt;Visit Google&lt;/a&gt;</code>
+        <div class="RelativeURL">
+          <p><b>Relative URL</b> Clicking on <a href="https://google.com/">Visit Google</a> will lead you to Google's homepage. <br>It can be used as follows:</p>
+          <div class="code">
+            <code>&lt;a href="https://google.com/"&gt;Visit Google&lt;/a&gt;</code>
+          </div>
         </div>
-      </div>
-
-      <div class="TargetAttribute">
-        <p><b>Target Attribute</b> <br>
-        <span style="color: forestgreen;">_self</span> - Default. Opens the document in the same window/tab as it was clicked. <br>
-        <span style="color: forestgreen;">_blank</span> - Opens the document in a new window or tab. <br>
-        <span style="color: forestgreen;">_parent</span> - Opens the document in the parent frame. <br>
-        <span style="color: forestgreen;">_top</span> - Opens the document in the full body of the window. <br>
-        <span style="color:red">Note!</span> By default, the linked page will be displayed in the current browser window.<br>
-        It can be used as follows:</p>
-        <div class="code">
-          <code>&lt;a href="https://google.com/" target="_blank"&gt;Visit Google&lt;/a&gt;</code>
+  
+        <div class="TargetAttribute">
+          <p><b>Target Attribute</b> <br>
+          <span style="color: forestgreen;">_self</span> - Default. Opens the document in the same window/tab as it was clicked. <br>
+          <span style="color: forestgreen;">_blank</span> - Opens the document in a new window or tab. <br>
+          <span style="color: forestgreen;">_parent</span> - Opens the document in the parent frame. <br>
+          <span style="color: forestgreen;">_top</span> - Opens the document in the full body of the window. <br>
+          <span style="color:red">Note!</span> By default, the linked page will be displayed in the current browser window.<br>
+          It can be used as follows:</p>
+          <div class="code">
+            <code>&lt;a href="https://google.com/" target="_blank"&gt;Visit Google&lt;/a&gt;</code>
+          </div>
         </div>
-      </div>
-
-      <div class="ImageAsLink">
-        <p><b>Image as a Link</b> Example: Clicking on 
-          <a href="https://google.com/">
-            <img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;">
-          </a> 
-          will lead you to Google's homepage. <br>It can be used as follows:</p>
-        <div class="code">
-          <code>&lt;a href="https://google.com/"&gt;<br>
-            &emsp;&emsp;&lt;img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;"&gt;<br>
-          &lt;/a&gt;</code>        
+  
+        <div class="ImageAsLink">
+          <p><b>Image as a Link</b> Clicking on 
+            <a href="https://google.com/">
+              <img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;">
+            </a> 
+            will lead you to Google's homepage. <br>It can be used as follows:</p>
+          <div class="code">
+            <code>
+              &lt;a href="https://google.com/"&gt;<br>
+                &emsp;&emsp;&lt;img src="smiley.gif" alt="Google Image" style="width:42px;height:42px;"&gt;<br>
+              &lt;/a&gt;
+            </code>        
+          </div>
         </div>
-      </div>
-
-      <div class="EmailLink">
-        <p><b>Link to an Email Address</b> Example: Clicking on <a href="mailto:someone@example.com">Send email to someone@example.com</a> 
-        create a link that opens the user's email program (to let them send a new email). <br>
-        It can be used as follows:</p>
-        <div class="code">
-          <code>&lt;a href="https://google.com/"&gt;Send email to someone@example.com&lt;/a&gt;</code>
+  
+        <div class="EmailLink">
+          <p><b>Link to an Email Address</b> Clicking on <a href="mailto:someone@example.com">Send email to someone@example.com</a> 
+          create a link that opens the user's email program (to let them send a new email). <br>
+          It can be used as follows:</p>
+          <div class="code">
+            <code>&lt;a href="https://google.com/"&gt;Send email to someone@example.com&lt;/a&gt;</code>
+          </div>
         </div>
-      </div>
-
-      <div class="LinkTitles">
-        <p><b>Link Titles</b> Example: Hovering on <a href="https://google.com/" title="Go to Google">Visit Google</a>
-        will show you the information of the "Visit Google" link. <br>
-        It can be used as follows:</p>
-        <div class="code">
-          <code>&lt;a href="https://google.com/" title="Go to Google"&gt;Visit Google&lt;/a&gt;</code>
+  
+        <div class="LinkTitles">
+          <p><b>Link Titles</b> Hovering on <a href="https://google.com/" title="Go to Google">Visit Google</a>
+          will show you the information of the "Visit Google" link. <br>
+          It can be used as follows:</p>
+          <div class="code">
+            <code>&lt;a href="https://google.com/" title="Go to Google"&gt;Visit Google&lt;/a&gt;</code>
+          </div>
         </div>
-      </div>
-    </div><hr>
+        <div class="Button">
+          <p><b>Button URL</b> Clicking on <button onclick="document.location='https://google.com/'">Visit Google</button> <br>
+            It can be used as follows:</p>
+          <div class="code">
+            <code>&lt;a href="https://google.com/"&gt;Visit Google&lt;/a&gt;</code>
+          </div>
+        </div>
+      </div><hr>
 
     <div class="ExternalLink">
       <h3>2. External Link</h3>
@@ -111,6 +118,55 @@
       </div>
     </div><hr>
 
+    <div class="LinkBookmarks">
+      <h3>3. Link Bookmarks</h3>
+        <span><b>Link Bookmarks</b></span> ususlly directs you to go to a destination of a page. <br>
+        Clicking on <a href="#Links">Go back to Links</a> will get you to Links destiantion<br>
+        It can be used as follows:
+      <div class="code">
+        <code>&lt;a href="#Links"&gt;Go back to Links&lt;/a&gt; </code>
+      </div>
+        You can also add a link to a bookmark on another page.
+        Clicking on <a href="../CSS/index.html#css">Go to CSS</a> will get you to Links destiantion.<br>
+        It can be used as follows:
+    <div class="code">
+      <code>&lt;a href="../CSS/index.html#css"&gt;Go to CSS&lt;/a&gt; </code>
+    </div>
+    </div><hr>
+
+  </div>
+
+  <div class="Lists" id="Lists">
+    <h2>Lists</h2>
+    <div class="UnorderedList ">
+      <span><b>An unordered list</b></span> starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag. <br>
+      The list items will be marked with bullets (small black circles) by default:<br><br>
+      It can be used as follows:
+      <div class="code">
+        <code>
+          &lt;ul&gt;<br>
+            &emsp;&lt;li&gt;Coffee&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Tea&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Milk&lt;/li&gt;<br>
+          &lt;/ul&gt;
+        </code>
+      </div><br>
+      Output: 
+      <ul>
+        <li>UnorderedList1</li>
+        <li>UnorderedList2</li>
+        <li>UnorderedList3</li>
+      </ul><br>
+    </div>
+    
+    
+
+    <div class="OrderedList">
+      <span><b>An ordered list</b></span> starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag. <br>
+      The list items will be marked with numbers by default: <br><br>
+
+      Example: 
+    </div>
   </div>
   
 </body>
